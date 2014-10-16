@@ -1,0 +1,157 @@
+/* Contact */
+
+#contactContent {
+	margin-top: 25px;
+	.contactTitle,
+	.contact-form-title,
+	.OfficeName,
+	#staffTitle {
+		font-family: 'Avenir W01', sans-serif;
+		font-weight: 900;
+		color: #333;
+	}
+	.contactTitle,
+	.contact-form-title {
+		font-size: 30px;
+	}
+	.OfficeName,
+	#staffTitle {
+		font-size: 26px;
+		margin-top: 25px;
+	}
+	.Office {
+		font-family: 'Avenir W01', sans-serif;
+		a {
+			color: $gold;
+			&:hover {
+				text-decoration: none;
+				color: #666;
+			}
+		}
+	}
+	#contactFormWrapper {
+		padding: 20px;
+		background: #eeeeee;
+		input,
+		textarea {
+			width: 100%;
+		}
+		textarea {
+			margin-bottom: 25px;
+		}
+		.form-phone input {
+			width: 45px !important;
+			text-align: center;
+			margin: 0 2px;
+		}
+		.FormButton {
+			background: #C8942B;
+			display: block;
+			margin-top: 10px;
+			border: 0;
+			padding: 8px 0;
+			text-transform: uppercase;
+			font-family: 'Avenir W01', sans-serif;
+			font-size: 15px;
+			font-weight: 900;
+			color: white;
+			&:hover {
+				@extend %button-over;
+			}
+		}
+	}
+}
+
+
+// Staff
+.Staff {
+	margin: 25px 0;
+	.Photo {
+		width: 48%;
+		padding: 0 0 15px;
+		@include breakpoint(medium) {
+			width: 35%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 150px;
+		}
+	}
+	.Controls {
+		i {
+			font-size: 24px;
+			color: $gold;
+			cursor: pointer;
+		}
+		.fa-chevron-right {
+			margin-left: 5px;
+		}
+		a {
+			position: relative;
+			top: -5px;
+			font-family: 'Avenir W01', sans-serif;
+			font-weight: 900;
+			font-size: 12px;
+			color: $gold;
+		}
+	}
+	.FirstName,
+	.LastName {
+		font-family: 'Avenir W01', sans-serif;
+		font-weight: 900;
+		font-size: 20px;
+		display: inline;
+	}
+	.Title {
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 13px;
+		color: #555555;
+		line-height: 1.125;
+	}
+	.Contact {
+		a {
+			color: #7F7F7F;
+			font-size: 19px;
+			margin-right: 15px;
+			&:hover {
+				color: $gold;
+			}
+		}
+	}
+	.OpenContent {
+		clear: left;
+		margin: 30px 0 0 0;
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 13px;
+		@include breakpoint(medium) {
+			clear: none;
+			margin: 10px 0 0;
+		}
+		strong {
+			font-weight: 900;
+			padding-bottom: 7px;
+			display: inline-block;
+		}
+	}
+}
+
+
+// Form validation styles
+#contactFormWrapper {
+	.valid-input { 
+		border: solid 2px rgba(108, 190, 69, 0.8); 
+		outline: 0; 
+		outline: thin dotted \9; 
+		-webkit-box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6); 
+		-moz-box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6); 
+		box-shadow: inset 0 1px 1px rgba(108, 190, 69, 0.075), 0 0 8px rgba(108, 190, 69, 0.6); 
+	}
+	.EditingFormErrorLabel { color: red; }
+	.invalid-input { 
+		border: solid 2px rgba(238, 42, 36, 0.8); 
+		outline: 0; 
+		outline: thin dotted \9; 
+		-webkit-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); -moz-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); 
+	}
+}

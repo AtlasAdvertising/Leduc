@@ -1,0 +1,268 @@
+/* Secondary */
+
+// Header Image
+#secondaryHeaderImage {
+	position: relative;
+	img {
+		max-width: 100%;
+	}
+	.SectionHeaderRepeater {
+		position: absolute;
+		bottom: -1px;
+		background: rgba(255,255,255,0.8);
+		padding: 5px 15px;
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 36px;
+		font-weight: 900;
+		&:after {
+			content: "";
+			border-top: 61px solid transparent;
+			border-left: 31px solid rgba(255,255,255,0.8);
+			position: absolute;
+			bottom: 0px;
+			right: -31px;
+		}
+	}
+	.SectionHeaderRepeater.no-image {
+		position: relative;
+		bottom: 0;
+		display: inline-block;
+		background: rgba(0,0,0,0.8);
+		color: #fff;
+		padding: 5px 75px 5px 15px;
+		&:after {
+			border-left: 31px solid rgba(0,0,0,0.8);
+			border-bottom: 61px solid transparent;
+			border-top: none;
+		}
+	}
+}
+
+
+// Secondary Nav
+#sideNavigation {
+	ul#menuElem {
+		font-family: Arial, sans-serif;
+		border-right: 1px solid #E7E3E0;
+		list-style: none;
+		padding: 15px 0 100px;
+		margin-top: -15px;
+		li {
+			a {
+				font-weight: bold;
+				font-size: 12px;
+				color: black;
+				display: inline-block;
+				padding: 5px 20px 5px 0px;
+				&:hover {
+					color: $gold;
+					text-decoration: none;
+				}
+			}
+		}
+		li.HighLighted {
+			> a {
+				color: $gold;
+				&:hover {
+					opacity: 0.5;
+					text-decoration: none;
+				}
+			}
+		}
+		img {
+			display: none;
+		}
+		ul {
+			padding: 0 0 0 10px;
+			list-style: none;
+			a {
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+
+// Breadcrumb
+.breadCrumbs {
+	a {
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 12px;
+		color: #666;
+		font-weight: 500;
+		&:hover {
+			color: $gold;
+			text-decoration: none;
+		}
+	}
+	.breadcrumbHome {
+		color: $gold;
+		font-size: 18px;
+		&:hover {
+			color: #666;
+		}
+	}
+	.seperator {
+		margin: 0 2px;
+	}
+}
+
+
+// My Fav's
+.PageUtility { 
+	z-index: 1;
+	.PageUtility_Wrapper { 
+		width: 320px; 
+		#Utility_MyFavorites, 
+		#Utility_AddPage, 
+		#Utility_Print { 
+			border: 0; 
+			color: #666; 
+			font-size: 12px; 
+			font-family: Helvetica, Arial, sans-serif; 
+			font-weight: normal; 
+			padding: 0 10px 0 0;
+			&:hover {
+				color: $gold;
+				text-decoration: none;
+			} 
+		}
+		#Utility_MyFavorites:after, 
+		#Utility_AddPage:after, 
+		#Utility_Print:after { 
+			content: ': :'; 
+			padding-left: 7px; 
+		}
+		.addthis_button { 
+			font-weight: normal; 
+			&:hover {
+				color: $gold;
+				text-decoration: none;
+			}
+		}
+		#Utility_Share { 
+			padding: 0; 
+		}
+		.ImgBg { 
+			display: none; 
+		}
+	}
+	.PageUtility_Dropdown { 
+		-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
+		-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
+		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
+	}
+}
+
+
+// Secondary Content
+#secondaryContent {
+	padding: 15px 0 50px;
+}
+
+#secondaryMainContent {
+	font-family: 'Avenir W01', sans-serif;
+	font-size: 13px;
+	color: #666;
+	a {
+		text-decoration: none;
+		font-weight: 900;
+		color: $gold;
+		&:hover {
+			color: #333;
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Avenir W01', sans-serif;
+		font-weight: 900;
+		color: #333;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	h5 {
+		font-size: 16px;
+	}
+	h6 {
+		font-size: 14px;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+
+
+// Widgets
+#sideWidgets {
+	img {
+		max-width: 100%;
+	}
+	.widget-block h2,
+	.widget-title,
+	.twitter-wrapper h2 {
+		@extend %border-header;
+	}
+	.signup-text {
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16px;
+		margin-bottom: 10px;
+		h4 {
+			font-size: 16px;
+			font-weight: 900;
+			margin-bottom: 2px;
+		}
+	}
+	.SidebarText {
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 16px;
+		margin-top: 10px;
+	}
+	.ConnectWithUs {
+		height: 300px !important;
+		.Photo {
+			width: 100%;
+			text-align: center;
+			height: 160px;
+			img {
+				max-width: 150px;
+			}
+		}
+		.Controls {
+			clear: left;
+		}
+		.OpenContent {
+			display: none;
+		}
+	}
+	.events-widget {
+		position: relative;
+		ul {
+			padding: 0;
+			li:before {
+				left: 15px;
+			}
+		}
+		.view-all-link {
+			font-family: 'Avenir W01', sans-serif;
+			font-weight: 900;
+			font-size: 12px;
+			color: $gold;
+			position: absolute;
+			top: 18px;
+			right: 0;
+		}
+	}
+}

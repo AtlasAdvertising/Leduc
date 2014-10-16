@@ -1,0 +1,81 @@
+/* Media Center */
+
+.media-center-wrapper {
+	padding-bottom: 30px;
+	.webpart-title {
+		font-family: 'Avenir W01', sans-serif;
+		font-size: 22px;
+		font-weight: 900;
+		color: black;
+		border-top: 3px solid;
+		padding: 5px 0 10px 0;
+		margin: 25px 0 0 0;
+	}
+}
+.media-title {
+    display: inline-block;  background: rgba(0,0,0,0.8);  color: #fff;  padding: 5px 75px 5px 15px;
+    font-family: 'Avenir W01', sans-serif;  font-size: 36px;  font-weight: 900;
+    position: relative;
+    margin-bottom: 20px;
+}
+.media-title:after {
+    border-left: 31px solid rgba(0,0,0,0.8);  border-bottom: 61px solid transparent;  border-top: none;
+    position: absolute;  bottom: 0px;  right: -31px;
+    content: "";
+}
+
+
+// News
+.news-list {
+	padding: 0;
+	list-style: none;	
+	font-family: 'Avenir W01', sans-serif;
+	.item {
+		margin: 0 0 20px 55px;
+		&:before {
+			content: "\f1ea";
+			font-family: 'FontAwesome';
+			color: black;
+			position: absolute;
+			left: 30px;
+			font-size: 20px;
+		}
+		.Title {
+			font-size: 17px;
+			font-weight: 900;
+			color: black;
+		}
+		a.Title {
+			color: $gold;
+			&:hover {
+				color: #555555;
+				text-decoration: none;
+			}
+		}
+		.Date {
+			color: #555555;
+			font-size: 11px;
+			font-weight: 300;
+			line-height: 24px;
+		}
+		.Description {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 16px;
+			color: black;
+		}
+	}
+}
+
+
+// Videos
+.media-center-wrapper {
+	.videoGallery .rsThumb.rsNavSelected {
+		background-color: $gold;
+		border-bottom: 1px solid $gold !important;
+	}
+	.VideoGallerySlider img.rsImg.rsMainSlideImage {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+}

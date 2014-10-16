@@ -1,0 +1,40 @@
+/* Mixins */
+
+
+/* Placeholders */
+%border-header {
+	font-family: 'Avenir W01', sans-serif;
+	font-size: 22px;
+	font-weight: 900;
+	color: black;
+	border-top: 3px solid;
+	padding: 5px 0 10px 0;
+	margin: 25px 0 0 0;
+}
+
+%input {
+  background: #EBEBEB;
+  border: none;
+  outline: 0;
+  padding: 6px 5px;
+}
+
+%button-over {
+  background: $steel-blue;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Breakpoint Mixins */
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: 1200px) { @content; }
+  }
+}
