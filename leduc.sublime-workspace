@@ -199,7 +199,7 @@
 			"file": "scss/main.scss",
 			"settings":
 			{
-				"buffer_size": 269,
+				"buffer_size": 285,
 				"line_ending": "Windows",
 				"name": "/* Leduc Main Sass File */"
 			}
@@ -226,7 +226,7 @@
 			"file": "scss/_mixins.scss",
 			"settings":
 			{
-				"buffer_size": 652,
+				"buffer_size": 667,
 				"line_ending": "Windows"
 			}
 		},
@@ -234,7 +234,7 @@
 			"file": "scss/_master.scss",
 			"settings":
 			{
-				"buffer_size": 10929,
+				"buffer_size": 11197,
 				"line_ending": "Windows",
 				"name": "/* Master */"
 			}
@@ -243,7 +243,7 @@
 			"file": "scss/_home.scss",
 			"settings":
 			{
-				"buffer_size": 7983,
+				"buffer_size": 8514,
 				"line_ending": "Windows",
 				"name": "/* Home */"
 			}
@@ -252,7 +252,7 @@
 			"file": "scss/_secondary.scss",
 			"settings":
 			{
-				"buffer_size": 4210,
+				"buffer_size": 4256,
 				"line_ending": "Windows",
 				"name": "/* Secondary */"
 			}
@@ -261,7 +261,7 @@
 			"file": "scss/_contact.scss",
 			"settings":
 			{
-				"buffer_size": 2903,
+				"buffer_size": 3000,
 				"line_ending": "Windows",
 				"name": "/* Contact */"
 			}
@@ -270,7 +270,7 @@
 			"file": "scss/_media.scss",
 			"settings":
 			{
-				"buffer_size": 1600,
+				"buffer_size": 1603,
 				"line_ending": "Windows",
 				"name": "/* Media Center */"
 			}
@@ -288,7 +288,7 @@
 			"file": "scss/_search.scss",
 			"settings":
 			{
-				"buffer_size": 1081,
+				"buffer_size": 1098,
 				"line_ending": "Windows",
 				"name": "/* Search */"
 			}
@@ -306,7 +306,7 @@
 			"file": "scss/_cmsdesk.scss",
 			"settings":
 			{
-				"buffer_size": 115,
+				"buffer_size": 116,
 				"line_ending": "Windows"
 			}
 		}
@@ -700,7 +700,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -708,15 +708,15 @@
 					"file": "scss/main.scss",
 					"settings":
 					{
-						"buffer_size": 269,
+						"buffer_size": 285,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269,
-								269
+								0,
+								0
 							]
 						],
 						"settings":
@@ -789,15 +789,15 @@
 					"file": "scss/_mixins.scss",
 					"settings":
 					{
-						"buffer_size": 652,
+						"buffer_size": 667,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								90
+								0,
+								0
 							]
 						],
 						"settings":
@@ -823,15 +823,15 @@
 					"file": "scss/_master.scss",
 					"settings":
 					{
-						"buffer_size": 10929,
+						"buffer_size": 11197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8469,
-								8469
+								0,
+								0
 							]
 						],
 						"settings":
@@ -851,15 +851,15 @@
 					"file": "scss/_home.scss",
 					"settings":
 					{
-						"buffer_size": 7983,
+						"buffer_size": 8514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7329,
-								7329
+								0,
+								0
 							]
 						],
 						"settings":
@@ -879,15 +879,15 @@
 					"file": "scss/_secondary.scss",
 					"settings":
 					{
-						"buffer_size": 4210,
+						"buffer_size": 4256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3311,
-								3311
+								0,
+								0
 							]
 						],
 						"settings":
@@ -907,15 +907,15 @@
 					"file": "scss/_contact.scss",
 					"settings":
 					{
-						"buffer_size": 2903,
+						"buffer_size": 3000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								544,
-								544
+								0,
+								0
 							]
 						],
 						"settings":
@@ -935,15 +935,15 @@
 					"file": "scss/_media.scss",
 					"settings":
 					{
-						"buffer_size": 1600,
+						"buffer_size": 1603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								699,
-								699
+								0,
+								0
 							]
 						],
 						"settings":
@@ -990,21 +990,22 @@
 					"file": "scss/_search.scss",
 					"settings":
 					{
-						"buffer_size": 1081,
+						"buffer_size": 1098,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								932,
-								932
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"auto_name": "/* Search */",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1031,7 +1032,8 @@
 						"settings":
 						{
 							"auto_name": "/* Success Stories */",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1044,15 +1046,15 @@
 					"file": "scss/_cmsdesk.scss",
 					"settings":
 					{
-						"buffer_size": 115,
+						"buffer_size": 116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								0,
+								0
 							]
 						],
 						"settings":

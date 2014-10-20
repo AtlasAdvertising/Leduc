@@ -1,5 +1,5 @@
 /* Blog */
-.container#blog {
+#blog {
 	padding: 15px 0 50px;
 }
 .blog {
@@ -30,13 +30,16 @@
 		}
 	}
 	.blog-title {
+		display: block;
 		color: #000;
-		display: inline-block;
 		font-size: 45px;
 		font-family: 'Avenir W01', sans-serif;
 		font-weight: 900;
-		width: 50%;
 		vertical-align: middle;
+		@include breakpoint(small) {
+			display: inline-block;
+			width: 50%;
+		}
 	}
 
 }
@@ -59,6 +62,7 @@
 			font-weight: 900;
 			color: #2e363e;
 			display: block;
+			margin: 0 0 5px 0;
 		}
 		#subscribeBox {
 			font-family:'Avenir W01', sans-serif;
@@ -94,6 +98,7 @@
 			font-weight: 900;
 			color: #000;
 			display: block;
+			margin: 0 0 5px 0;
 		}
 		#searchBlogBox {
 			font-family:'Avenir W01', sans-serif;
@@ -128,10 +133,15 @@
 	}
 	.blogpost-wrapper {
 		display: block;
-		margin: 0 0 20px 0;
+		margin: 0 0 50px 0;
 		&:hover {
 			.blogpost {
 				box-shadow: 0px 0px 5px 0px rgba(103,103,103,0.25);
+				.readmore {
+					span {
+						color: $gold;
+					}
+				}
 			}
 			.date {
 				background: $gold !important;
@@ -220,7 +230,7 @@
 					font-family:'Avenir W01', sans-serif;
 					font-style: italic;
 					font-size: 12px;
-					color: $gold;
+					color: #000;
 					transition: all 0.1s linear;
 					font-weight: bold;
 				}
@@ -426,7 +436,13 @@ table.CommentForm label {
 	padding: 7px;
 	border: 1px solid #C2C2C2;
 	background: #E3E3E3;
+	width: 100%;
 }
+.BlogRequiredValidator {
+	margin: 0 0 20px 0;
+}
+
+
 
 
 // Search Results 
