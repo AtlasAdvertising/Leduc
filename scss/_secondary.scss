@@ -84,7 +84,8 @@
 
 
 // Breadcrumb
-.breadCrumbs {
+.breadCrumbs,
+.breadcrumbs-wrapper {
 	a {
 		font-family: 'Avenir W01', sans-serif;
 		font-size: 12px;
@@ -104,6 +105,7 @@
 	}
 	.seperator {
 		margin: 0 2px;
+		display: inline;
 	}
 }
 

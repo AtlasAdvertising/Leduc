@@ -1,0 +1,470 @@
+/* Blog */
+.container#blog {
+	padding: 15px 0 50px;
+}
+.blog {
+	font-family: 'Avenir W01', sans-serif;
+}
+
+
+// Blog Header
+.BlogHeader {
+	display: none;
+}
+.blog-header {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	padding: 0 0 20px 0;
+	margin: 0 0 20px 0;
+	font-size: 0;
+	@include breakpoint(small) {
+		padding: 0;
+	}
+	.image-wrapper {
+		@include breakpoint(small) {
+			display: inline-block;
+			width: 50%;
+			vertical-align: middle;
+		}
+		img {
+			margin: 0 0 0 -23px;
+		}
+	}
+	.blog-title {
+		color: #000;
+		display: inline-block;
+		font-size: 45px;
+		font-family: 'Avenir W01', sans-serif;
+		font-weight: 900;
+		width: 50%;
+		vertical-align: middle;
+	}
+
+}
+
+	.blog-search, 
+	.blog-subscribe {
+		margin-bottom: 25px;
+	}
+	.blog-subscribe {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+		font-size: 0;
+		@include breakpoint(small) {
+			width: 25%;
+		}
+		label {
+			font-family:'Avenir W01', sans-serif;
+			font-size: 16px;
+			font-weight: 900;
+			color: #2e363e;
+			display: block;
+		}
+		#subscribeBox {
+			font-family:'Avenir W01', sans-serif;
+			font-size: 14px;
+			vertical-align: top;
+			padding: 7px;
+			border: 1px solid #C2C2C2;
+			background: #E3E3E3;
+			width: 75%;
+		}
+		#subscribeBtn {
+			background: url(/TVAED/images/white-arrow.png) no-repeat center center $gold;
+			height: 36px;
+			width: 36px;
+			border: none;
+			transition: all 0.1s linear;
+			&:hover {
+				background-color: $steel-blue;
+			}
+		}
+	}
+	.blog-search {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50%;
+		font-size: 0;
+		@include breakpoint(small) {
+			width: 25%;
+		}
+		label {
+			font-family:'Avenir W01', sans-serif;
+			font-size: 16px;
+			font-weight: 900;
+			color: #000;
+			display: block;
+		}
+		#searchBlogBox {
+			font-family:'Avenir W01', sans-serif;
+			font-size: 14px;
+			vertical-align: top;
+			padding: 7px;
+			border: 1px solid #C2C2C2;
+			background: #E3E3E3;
+			width: 75%;
+		}
+		#searchBlogBtn {
+			background: url(/TVAED/images/white-arrow.png) no-repeat center center $gold;
+			height: 36px;
+			width: 36px;
+			border: none;
+			transition: all 0.1s linear;
+			&:hover {
+				background-color: $steel-blue;
+			}
+		}
+	}
+
+// Blog Posts
+.blog {
+	.back {
+		color: #00687e;
+		font-family:'Avenir W01', sans-serif;
+		font-size: 12px;
+		&:hover {
+			color: #42484d;
+		}
+	}
+	.blogpost-wrapper {
+		display: block;
+		margin: 0 0 20px 0;
+		&:hover {
+			.blogpost {
+				box-shadow: 0px 0px 5px 0px rgba(103,103,103,0.25);
+			}
+			.date {
+				background: $gold !important;
+			}
+		}
+		.blogpost {
+			background: #fff;
+			position: relative;
+			@include breakpoint(small) {
+				height: 420px;
+			}
+			@include breakpoint(large) {
+				height: 410px;
+			}
+			.image {
+				position: relative;
+				margin: 0 0 10px 0;
+				.date {
+					font-family:'Avenir W01', sans-serif;
+					font-weight: bold;
+					font-size: 13px;
+					color: #fff;
+					background: #000;
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 6px 15px;
+				}
+			}
+			.title {
+				font-family:'Avenir W01', sans-serif;
+				font-weight: bold;
+				font-size: 22px;
+				color: #2e363e;
+				padding: 0 15px;
+				line-height: 1.1;
+			}
+			.author {
+				font-family:'Avenir W01', sans-serif;
+				font-size: 13px;
+				color: #666666;
+				padding: 0 15px;
+			}
+			.summary {
+				font-family:'Avenir W01', sans-serif;
+				font-size: 13px;
+				color: #000;
+				font-weight: 500;
+				padding: 20px 15px 70px 15px;
+				@include breakpoint(small) {
+					padding: 20px 15px;
+				}
+				h1, h2, h3, h4, h5, h6 {
+					font-family: 'Avenir W01', sans-serif;
+					font-weight: 900;
+					color: #333;
+				}
+				h1 {
+					font-size: 30px;
+				}
+				h2 {
+					font-size: 28px;
+				}
+				h3 {
+					font-size: 25px;
+				}
+				h4 {
+					font-size: 18px;
+				}
+				h5 {
+					font-size: 16px;
+				}
+				h6 {
+					font-size: 14px;
+				}
+			}
+			.readmore {
+				border-top: 3px solid #edecea;
+				padding: 15px;
+				transition: all 0.1s linear;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				span {
+					font-family:'Avenir W01', sans-serif;
+					font-style: italic;
+					font-size: 12px;
+					color: $gold;
+					transition: all 0.1s linear;
+					font-weight: bold;
+				}
+			}
+			&.detail {
+				height: auto;
+				background: transparent;
+				box-shadow: none;
+				.image {
+					margin: 0 0 20px 0;
+					display: block;
+				}
+				.date {
+					background: rgba(0,0,0,0.1) !important;
+				}
+				.title {
+					color: #000;
+					font-size: 32px;
+					padding: 0;
+					display: inline-block;
+					margin: 0 0 15px 0;
+					vertical-align: middle;
+				}
+				.tags {
+					display: table;
+					margin: 20px 0 35px 0;
+					.date, .author, .categories {
+						margin: 0 5px 5px 0;
+						font-size: 12px;
+						display: inline-block;
+						background: rgba(0,0,0,0.1);
+						padding: 5px 10px;
+						line-height: 1;
+						border-radius: 3px;
+						color: #666;
+						font-style: normal;
+						font-family: 'Arial', arial, sans-serif;
+						i {
+							margin: 0 5px 0 0;
+						}
+					}
+				}
+				.summary {
+					padding: 0;
+					clear: both;
+				}
+				.social-media {
+					margin: 0 0 15px 0;
+					vertical-align: middle;
+					@include breakpoint(small) {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Blog Utility 
+.BlogSidebarAuthors,
+.BlogSidebarTopics {
+	font-family: 'Avenir W01', sans-serif;
+	width: 50%;
+	float: left;
+	.Title {
+		font-size: 28px;
+		font-weight: 900;
+		color: #000;
+	}
+	.Content {
+		div {
+			font-size: 0;
+		}
+		a {
+			font-size: 14px;
+			font-weight: 900;
+			color: $gold;
+			padding-bottom: 5px;
+			display: inline-block;
+			&:hover {
+				color: $steel-blue;
+			}
+			&:before {
+				content: "\f061";
+				font-family: 'FontAwesome';
+				margin-right: 7px;
+			}
+		}
+	}
+}
+
+.details-blog-search-subscribe {
+	display: none;
+}
+
+.col-sm-3 {
+	.BlogSidebarAuthors, 
+	.BlogSidebarTopics {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+		.Title {
+			font-size: 22px;
+		}
+	}
+	.details-blog-search-subscribe {
+		display: block;
+		.blog-subscribe,
+		.blog-search {
+			width: 100%;
+			float: none;
+		}
+	}
+}
+
+
+// Pager Controls 
+.PagerControl {
+    clear: left;
+    width: auto;
+    float: left;
+    font-family: 'Avenir W01', sans-serif;
+    background: #555;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 25px 15px;
+}
+.PagerControl a {
+    color: #fff;
+    padding: 6px 5px;
+    &:hover {
+			background: #666;
+		}
+}
+.SelectedNext,
+.SelectedPrev {
+	display: none;
+}
+.UnselectedNext {
+	margin-left: -15px;
+}
+.UnselectedPrev {
+	margin-right: -10px;
+}
+.UnselectedPrev:before {
+    content: "\00ab";
+    margin-right: 5px;
+}
+.UnselectedNext:after {
+    content: "\00bb";
+    margin-left: 5px;
+}
+
+
+// Comments 
+table.BlogPanel {
+	width: 100%;
+}
+.BlogCommentsTitle,
+.BlogLeaveComment {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 10px 0 25px;
+  display: inline-block;
+  padding-top: 15px;
+  border-top: 1px solid #EEEEEE;
+  width: 100%;
+}
+hr.PostCommentSeparatorLine {
+	display: none;
+}
+.CommentDetail td {
+  vertical-align: top;
+}
+.CommentUserPicture {
+  margin-right: 15px;
+}
+.CommentUserName {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 2px;
+	display: inline-block;
+}
+.CommentText,
+.CommentDate {
+  color: #666;
+  font-size: 14px;
+}
+.CommentDate {
+  margin-top: 5px;
+	display: inline-block;
+}
+table.CommentForm label {
+	font-size: 14px;
+	font-weight: 900;
+	margin: 12px 0 5px;
+	display: inline-block;
+}
+.TextBoxField, 
+.TextAreaField {
+	padding: 7px;
+	border: 1px solid #C2C2C2;
+	background: #E3E3E3;
+}
+
+
+// Search Results 
+.blog-search-results {
+	ul {
+		list-style: none;
+		li {
+			padding: 0 0 20px 0;
+			margin: 0 0 20px 0;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+			.title {
+				font-family:'Avenir W01', sans-serif;
+				font-weight: bold;
+				font-size: 22px;
+				color: #00687e;
+				line-height: 1.1;
+				display: inline-block;
+				margin: 0 0 10px 0;
+				&:hover {
+					color: #42484d;
+				}
+			}
+			div {
+				font-family:'Avenir W01', sans-serif;
+				font-size: 13px;
+				color: #42484d;
+				margin: 0 0 10px 0;
+			}
+			.link {
+				font-family:'Avenir W01', sans-serif;
+				font-style: italic;
+				font-size: 14px;
+				color: #00687e;
+				font-weight: bold;
+				&:hover {
+					color: #42484d;
+				}
+			}
+		}
+	}
+}
