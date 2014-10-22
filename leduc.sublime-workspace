@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"blog",
+				"blog-posts-wrapper"
+			],
+			[
 				"text",
 				"text-decoration"
 			],
@@ -243,7 +251,7 @@
 			"file": "scss/_home.scss",
 			"settings":
 			{
-				"buffer_size": 8514,
+				"buffer_size": 9213,
 				"line_ending": "Windows",
 				"name": "/* Home */"
 			}
@@ -252,7 +260,7 @@
 			"file": "scss/_secondary.scss",
 			"settings":
 			{
-				"buffer_size": 4256,
+				"buffer_size": 4144,
 				"line_ending": "Windows",
 				"name": "/* Secondary */"
 			}
@@ -270,7 +278,7 @@
 			"file": "scss/_media.scss",
 			"settings":
 			{
-				"buffer_size": 1603,
+				"buffer_size": 1691,
 				"line_ending": "Windows",
 				"name": "/* Media Center */"
 			}
@@ -359,10 +367,10 @@
 	},
 	"file_history":
 	[
+		"/C/Gulp-Projects/Leduc/gulpfile.js",
 		"/C/Atlas/Local Code/Random Examples/breakpoint-mixins.scss",
 		"/C/Atlas/Local Code/Kentico Site Projects/scss/master-nav.scss",
 		"/C/Gulp-Projects/GOPEP/scss/main.scss",
-		"/C/Gulp-Projects/Leduc/gulpfile.js",
 		"/C/Gulp-Projects/GOPEP/scss/_mixins.scss",
 		"/C/Atlas/Local Code/Kentico Site Projects/master-leduc.html",
 		"/C/Gulp-Projects/GOPEP/gulpfile.js",
@@ -815,7 +823,7 @@
 			]
 		},
 		{
-			"selected": 8,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -830,8 +838,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								4495,
+								4495
 							]
 						],
 						"settings":
@@ -841,7 +849,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6995.0,
+						"translation.y": 3216.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -851,15 +859,15 @@
 					"file": "scss/_home.scss",
 					"settings":
 					{
-						"buffer_size": 8514,
+						"buffer_size": 9213,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8652,
+								8652
 							]
 						],
 						"settings":
@@ -869,7 +877,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5312.0,
+						"translation.y": 6537.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -879,15 +887,15 @@
 					"file": "scss/_secondary.scss",
 					"settings":
 					{
-						"buffer_size": 4256,
+						"buffer_size": 4144,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2961,
+								2961
 							]
 						],
 						"settings":
@@ -897,7 +905,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2719.0,
+						"translation.y": 1963.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -935,15 +943,15 @@
 					"file": "scss/_media.scss",
 					"settings":
 					{
-						"buffer_size": 1603,
+						"buffer_size": 1691,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1691,
+								1691
 							]
 						],
 						"settings":
@@ -953,7 +961,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
