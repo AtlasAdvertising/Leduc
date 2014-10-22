@@ -478,7 +478,8 @@ div#signup-form {
 			margin: 0 0 10px 55px
 		}
 	}
-	.Title a {
+	.Title a,
+	.title a {
 		font-size: 17px;
 		font-weight: 900;
 		color: $gold;
@@ -486,5 +487,51 @@ div#signup-form {
 			color: black;
 			text-decoration: none;
 		}
+	}
+}
+
+.blog-posts-wrapper {
+	.blogpost {
+		font-family: 'Avenir W01', sans-serif;
+		margin: 0 0 15px 55px;
+		list-style-type: none;
+		&:before {
+			content: "\f09e";
+			font-family: 'FontAwesome';
+			position: absolute;
+			left: 30px;
+			font-size: 20px;
+			color: black;
+		}
+	}
+	.title a {
+		font-size: 17px;
+		font-weight: 900;
+		color: $gold;
+		&:hover {
+			color: black;
+			text-decoration: none;
+		}
+	}
+	.date {
+		color: #555555;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	.summary {
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 16px;
+		margin-bottom: 5px;
+	}
+	.readmore {
+		font-size: 13px;
+	}
+}
+
+.tab-pane {
+	.blog-posts-wrapper {
+		margin-top: 10px;
 	}
 }
