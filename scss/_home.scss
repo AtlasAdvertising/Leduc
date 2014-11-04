@@ -39,7 +39,7 @@
 		&:after {
 			content: "";
 			border-top: 87px solid transparent;
-			border-right: 990px solid black;
+			border-right: 990px solid #000;
 			position: absolute;
 			bottom: 0;
 			right: 106%;
@@ -59,11 +59,12 @@
 			top: 0;
 			position: absolute;
 			background: #231F20;
-			color: white;
+			color: #fff;
 			font-family: 'Avenir W01', sans-serif;
+			font-size: 14px;
 			font-style: italic;
 			font-weight: 900;
-			padding: 8px 20px;
+			padding: 8px 30px;
 		}
 		&:after {
 			content: "";
@@ -179,7 +180,7 @@
 		}
 	}
 	.tp-bullets .bullet:before { 
-		color: black;
+		color: #000;
 		content: counter(item); 
 		font-weight: bold; 
 		padding-right: 5px; 
@@ -240,6 +241,10 @@
 				max-width: 150px;
 			}
 		}
+		.copy {
+			float: left;
+			width: 60%;
+		}
 		.Controls {
 			i {
 				font-size: 24px;
@@ -291,7 +296,7 @@
 			font-size: 13px;
 			@include breakpoint(medium) {
 				clear: none;
-				margin: 30px 0 0 170px;
+				margin: 30px 0 0;
 			}
 			strong {
 				font-weight: 900;
@@ -314,7 +319,7 @@
 		position: absolute;
 		left: 30px;
 		font-size: 20px;
-		color: black;
+		color: #000;
 	}
 	.title a {
 		font-size: 17px;
@@ -335,7 +340,7 @@
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 16px;
-		color: black;
+		color: #000;
 	}
 }
 #home-top-wrapper .button {
@@ -346,12 +351,22 @@
 // Tabbed Area
 .tabbed-content-wrapper {
 	background: url(/leduc/images/featured-background.png);
+	margin-top: 90px;
+	position: relative;
+	@include breakpoint(small) {
+		margin-top: 0;
+	}
 	.tab-content {
+		padding: 0;
 		@media (max-width: 992px) {
-			padding: 0;
 		}
 	}
 	.editable-image {
+		padding: 0;
+		text-align: right;
+		@include breakpoint(medium) {
+			text-align: left;
+		}
 		img {
 			max-width: 100%;
 		}
@@ -362,7 +377,7 @@
 			font-weight: 300;
 			font-size: 13px;
 			@media (max-width: 992px) {
-				background: black;
+				background: #000;
 				padding-top: 5px;
 			}
 		h3 {
@@ -372,9 +387,10 @@
 	}
 	.nav-tabs {
 		@media (max-width: 992px) {
-			background: black;
-			margin: 0 -15px;
-			padding: 25px 15px;
+			background: #000;
+			margin: 0 auto;
+			padding: 0;
+			width: 206px;
 		}
 		border: 0;
 		@include breakpoint(medium) {
@@ -402,14 +418,24 @@
 					background: #1D1C19;
 				}
 			}
+			&:last-child a {
+				margin-right: 0;
+			}
 		}
+	}
+	.mobile-nav-tabs {
+		position: absolute;
+		top: -50px;
+		left: 0;
+		width: 100%;
+		z-index: 1;
 	}
 }
 
 
 // Bottom Area
 #home-bottom-wrapper {
-	padding: 25px 15px 0;
+	padding: 45px 15px 35px;
 	img {
 		max-width: 100%;
 	}
@@ -484,7 +510,7 @@ div#signup-form {
 		font-weight: 900;
 		color: $gold;
 		&:hover {
-			color: black;
+			color: #000;
 			text-decoration: none;
 		}
 	}
@@ -501,7 +527,7 @@ div#signup-form {
 			position: absolute;
 			left: 30px;
 			font-size: 20px;
-			color: black;
+			color: #000;
 		}
 	}
 	.title a {
@@ -509,7 +535,7 @@ div#signup-form {
 		font-weight: 900;
 		color: $gold;
 		&:hover {
-			color: black;
+			color: #000;
 			text-decoration: none;
 		}
 	}

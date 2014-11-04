@@ -24,17 +24,13 @@
 		}
 	}
 	.SectionHeaderRepeater.no-image {
-		position: relative;
-		bottom: 0;
-		display: inline-block;
 		background: rgba(0,0,0,0.8);
+		bottom: 0;
 		color: #fff;
+		display: inline-block;
 		padding: 5px 75px 5px 15px;
-		&:after {
-			border-left: 31px solid rgba(0,0,0,0.8);
-			border-bottom: 61px solid transparent;
-			border-top: none;
-		}
+		position: relative;
+		width: 100%;
 	}
 }
 
@@ -208,8 +204,26 @@
 	}
 	.widget-block h2,
 	.widget-title,
-	.twitter-wrapper h2 {
+	.twitter-wrapper h2,
+	#Sidebar_Downloads .SidebarTitle {
 		@extend %border-header;
+	}
+	#Sidebar_Downloads .SidebarText,
+	.SidebarListIcon {
+		display: none;
+	}
+	#Sidebar_Downloads ul {
+		list-style: none;
+		padding: 0;
+	}
+	.SidebarListMyFavorites {
+		float: right;
+		clear: right;
+	}
+	.SidebarListText a {
+		font-weight: bold;
+		display: inline-block;
+		margin: 0 0 5px;
 	}
 	.signup-text {
 		font-family: 'Avenir W01', sans-serif;
@@ -263,6 +277,13 @@
 			position: absolute;
 			top: 18px;
 			right: 0;
+		}
+	}
+	ul.LinksList {
+		list-style: none;
+		padding: 0;
+		a {
+			font-weight: bold;
 		}
 	}
 }

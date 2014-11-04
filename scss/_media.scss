@@ -13,15 +13,11 @@
 	}
 }
 .media-title {
-    display: inline-block;  background: rgba(0,0,0,0.8);  color: #fff;  padding: 5px 75px 5px 15px;
-    font-family: 'Avenir W01', sans-serif;  font-size: 36px;  font-weight: 900;
-    position: relative;
-    margin-bottom: 20px;
-}
-.media-title:after {
-    border-left: 31px solid rgba(0,0,0,0.8);  border-bottom: 61px solid transparent;  border-top: none;
-    position: absolute;  bottom: 0px;  right: -31px;
-    content: "";
+  display: inline-block;  background: rgba(0,0,0,0.8);  color: #fff;  padding: 5px 75px 5px 15px;
+  font-family: 'Avenir W01', sans-serif;  font-size: 36px;  font-weight: 900;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
 }
 
 
@@ -85,4 +81,10 @@
 .show-more.button,
 .show-less.button {
 	cursor: pointer;
+	&:hover {
+		background: $gold;
+		@include breakpoint(small) {
+			background: $steel-blue;
+		}
+	}
 }
