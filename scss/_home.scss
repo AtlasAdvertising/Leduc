@@ -227,7 +227,10 @@
 // Connect With Us
 .ConnectWithUs {
 	margin-bottom: 40px;
-	height: 280px !important;
+	height: 490px !important;
+	@include breakpoint(medium) {
+		height: 295px !important;
+	}
 	.Staff {
 		.Photo {
 			width: 48%;

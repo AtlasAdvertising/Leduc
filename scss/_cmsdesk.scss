@@ -8,3 +8,12 @@
 		display: none;
 	}
 }
+
+.DesignMode {
+#my-menu {
+	display:block !important; 
+	z-index:999999 !important; 
+	left:0px !important; 
+	height:30% !important;
+	}
+} 
