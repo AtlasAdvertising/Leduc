@@ -305,13 +305,14 @@ ul#footerSocial {
 				top: -7px;
 			}
 		}
-		&:before {
+		&:after {
+			color: $gold;
 			content: "\f0e0";
 			font-family: 'FontAwesome';
 			font-size: 20px;
 			position: relative;
 			top: -2px;
-			margin-right: 5px;
+			margin-left: 5px;
 			@include breakpoint(small) {
 				font-size: 30px;
 			}

@@ -228,12 +228,18 @@
 .ConnectWithUs {
 	margin-bottom: 40px;
 	height: 490px !important;
+	margin: 0 auto 40px;
+	width: 200px;
+	@include breakpoint(small) {
+		width: 100%;
+	}
 	@include breakpoint(medium) {
 		height: 295px !important;
 	}
 	.Staff {
 		.Photo {
-			width: 48%;
+			width: 150px;
+			margin: 0 auto;
 			padding: 0 0 15px;
 			@include breakpoint(medium) {
 				width: 35%;
@@ -246,7 +252,10 @@
 		}
 		.copy {
 			float: left;
-			width: 60%;
+			width: 100%;
+			@include breakpoint(small) {
+				width: 60%;
+			}
 		}
 		.Controls {
 			i {
@@ -351,7 +360,7 @@
 }
 
 
-// Tabbed Area
+// Middle Tabbed Area
 .tabbed-content-wrapper {
 	background: url(/leduc/images/featured-background.png);
 	margin-top: 90px;
@@ -516,6 +525,10 @@ div#signup-form {
 			color: #000;
 			text-decoration: none;
 		}
+	}
+	.button.twitter {
+		display: block;
+		width: 150px;
 	}
 }
 
