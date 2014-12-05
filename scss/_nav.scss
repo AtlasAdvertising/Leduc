@@ -208,6 +208,9 @@
 				right: 0;
 				left: auto;
 			}
+			> li:nth-last-child(2) ul li ul {
+				left: -100%;
+			}
 		}
 	}
 }
